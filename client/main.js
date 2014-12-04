@@ -19,6 +19,13 @@ Router.configure({
 
 
 Template.homePage.events({
+
+  'click #deletePost': function(){
+    console.log(this._id);
+    Posts.remove({_id: this._id});
+
+  },
+
   'click #listButton':function(){
     console.count('click #listButton');
     //var newRecordId = Math.random().toString(36).slice(2,26);

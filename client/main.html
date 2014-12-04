@@ -114,6 +114,9 @@
       <table class="table table-bordered">
         <thead class="bold">
         <td>
+          
+        </td>
+        <td>
           ID
         </td>
         <td>
@@ -122,11 +125,17 @@
         <td>
           Text
         </td>
+        <td>
+          Owner
+        </td>
         </thead>
         <tbody>
         {{#each postsList }}
         <tr>
-          <td width="25%">
+          <td width="10%">
+            <button id="deletePost" class="btn btn-danger">DELETE</button>
+          </td>
+          <td width="15%">
             {{ _id }}
           </td>
           <td width="25%">

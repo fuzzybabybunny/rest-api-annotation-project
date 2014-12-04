@@ -39,20 +39,23 @@ Meteor.startup(function(){
 
   if((Posts.find().count() == 0)) {
     Posts.insert({
-      title: "Red",
-      text: "Lorem ipsum...",
-      user: "victor",
-      dateCreate: Date()
-    });
-    Posts.insert({
-      title: "Blue",
-      text: "dolar set et...",
+      x: Date.UTC(2011, 3, 1),
+      title: "Lorem ipsum...",
+      text: "CRASHED TODAY",
       user: "victor",
       dateCreated: Date()
     });
     Posts.insert({
-      title: "Green",
-      text: "iple fessle prax.",
+      x: Date.UTC(2011, 3, 12),
+      title: "So Many Cats",
+      text: "LOLLER",
+      user: "victor",
+      dateCreated: Date()
+    });
+    Posts.insert({
+      x: Date.UTC(2011, 3, 15),
+      title: "Not enough cats.",
+      text: "SKATES",
       user: "victor",
       dateCreated: Date()
     });
