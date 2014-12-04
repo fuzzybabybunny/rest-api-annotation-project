@@ -1,5 +1,5 @@
 
-Statistics = new Meteor.Collection("statistics", {idGeneration : 'MONGO'});
+Statistics = new Mongo.Collection("statistics");
 Statistics.allow({
   insert: function(){
     return true;
@@ -13,7 +13,7 @@ Statistics.allow({
 });
 
 
-Posts = new Meteor.Collection("posts", {idGeneration : 'MONGO'});
+Posts = new Mongo.Collection("posts");
 Posts.allow({
   insert: function(){
     return true;

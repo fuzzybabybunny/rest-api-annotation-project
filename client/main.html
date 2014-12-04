@@ -126,14 +126,17 @@
         <tbody>
         {{#each postsList }}
         <tr>
-          <td width="33%">
-            {{ _id._str }}
+          <td width="25%">
+            {{ _id }}
           </td>
-          <td width="33%">
+          <td width="25%">
             {{title}}
           </td>
-          <td width="33%">
+          <td width="25%">
             {{text}}
+          </td>
+          <td width="25%">
+            {{user}}
           </td>
         </tr>
         {{/each}}

@@ -40,17 +40,22 @@ Meteor.startup(function(){
   if((Posts.find().count() == 0)) {
     Posts.insert({
       title: "Red",
-      text: "Lorem ipsum..."
+      text: "Lorem ipsum...",
+      user: "victor",
+      dateCreate: Date()
     });
     Posts.insert({
       title: "Blue",
-      text: "dolar set et..."
+      text: "dolar set et...",
+      user: "victor",
+      dateCreated: Date()
     });
     Posts.insert({
       title: "Green",
-      text: "iple fessle prax."
+      text: "iple fessle prax.",
+      user: "victor",
+      dateCreated: Date()
     });
-
   };
-});
 
+});
