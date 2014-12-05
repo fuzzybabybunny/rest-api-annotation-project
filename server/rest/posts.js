@@ -1,13 +1,14 @@
 //==============================================================================
 // the following is a vanilla REST API that uses the entire HTTP protocol
 
-// api:      http://localhost:3000/posts
-// example:  http://localhost:3000/posts
+// api:      http://localhost:3000/api/posts
+// example:  http://localhost:3000/api/posts
 
-// api:      http://localhost:3000/posts/:postId
-// example:  http://localhost:3000/posts/12345
+// api:      http://localhost:3000/api/posts/:postId
+// example:  http://localhost:3000/api/posts/12345
 
-
+// api:      http://localhost:3000/api/posts/search/:username
+// example:  http://localhost:3000/api/posts/search/bill
 
 Router.route('/api/posts', function(){
   // console.log('################################################');
