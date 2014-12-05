@@ -59,6 +59,27 @@ Meteor.startup(function(){
       user: "victor",
       dateCreated: Date()
     });
+    Posts.insert({
+      x: Date.UTC(2011, 3, 5),
+      title: "Lorem ipsum...",
+      text: "CRASHED TODAY",
+      user: "victor",
+      dateCreated: Date()
+    });
+    Posts.insert({
+      x: Date.UTC(2011, 3, 7),
+      title: "So Many Cats",
+      text: "LOLLER",
+      user: "clement",
+      dateCreated: Date()
+    });
+    Posts.insert({
+      x: Date.UTC(2011, 3, 11),
+      title: "Not enough cats.",
+      text: "SKATES",
+      user: "clement",
+      dateCreated: Date()
+    });
   };
 
 });
